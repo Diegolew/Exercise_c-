@@ -187,7 +187,7 @@ string exercise_14(int number_of_docs) {
         return "Se encontró un documento";
     }else{
         return to_string(number_of_docs) + " documentos encontrados";
-    }
+}
 }
 
 void exercise_15(int a, int b, int c) {
