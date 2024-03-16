@@ -26,7 +26,7 @@ void exercise_5(char character) {
 }
 
 void exercise_6(int number) {
-  // TODO: YOUR CODE HERE
+  // TODO: YOUR CODE HERE 
 switch (number){
     case 1:cout<<"Monday"<<endl;break;
     case 2:cout<<"Tuesday"<<endl;break;
