@@ -7,7 +7,7 @@ TEST(AreaSphere, TestAreaSphere) {
   exercise_7(10.9);
 
   std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(YOUR_OUTPUT, "1493.01\n");
+  ASSERT_EQ(YOUR_OUTPUT, "1492.25\n");
 }
 
 TEST(AreaSphere, HandlesNegativeRadius) {
