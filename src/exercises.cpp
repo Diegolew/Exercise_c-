@@ -63,6 +63,20 @@ void exercise_3(int a, int b) {
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE 
+double price,price2;
+  if(n>a && n>b){
+    price2=n-(n*y)/(100.00);
+    cout<<price2<<endl;
+  }
+  
+ 
+  else if(n>a){
+    price=n-(n*x)/(100.00);
+    cout<<price<<endl;
+  }
+  else{
+   cout<<n<<endl;
+  }
 }
 
 
@@ -91,12 +105,6 @@ switch (number){
 
 void exercise_7(double r) {
   //TODO: YOUR CODE
-    if (r < 0) {
-        cout << "Error: Radius cannot be negative." << endl;
-    } else {
-        double area = 4 * 3.14159 * r * r;
-        cout << fixed << setprecision(2)<< area << endl; 
-    }
 }
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE 
