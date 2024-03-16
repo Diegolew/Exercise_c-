@@ -24,14 +24,24 @@ void exercise_1(string s1, string s2, string s3) {
  }
 
 }
-
-
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
 }
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
+int C= double A;
+        int D= double B;
+
+    if (D == 0) {
+        cout << "Imposible" << endl;
+        return 0;
+    }
+
+    int resultado = C / D;
+
+    cout << "La parte entera del cociente de " << C << " dividido por " << D << " es: " << resultado << endl;
+
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
