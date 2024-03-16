@@ -178,6 +178,7 @@ string exercise_13(int age, int years_of_experience) {
 }
 
 string exercise_14(int number_of_docs) {
+    //TODO: YOUR CODE HERE
     if (number_of_docs < 0)
         return "Número de documentos inválido";
     else if (number_of_docs == 0)
@@ -189,17 +190,23 @@ string exercise_14(int number_of_docs) {
 }
 
 void exercise_15(int a, int b, int c) {
-    //TODO: YOUR CODE HERE
-    int a = 51;
-    int b = 876;
-    int c = 235;
+    //TODO: YOUR CODE HERE 
+    int temp_a = a;
+    int temp_b = b;
+    int temp_c = c;
+
     cout << "Los valores son: a = " << a << " b = " << b << " y c = " << c << endl;
     cout << "Permutamos: a => b, b => c, c => a" << endl;
-    cout << "Los valores despues de la permutacion son: a = " << c << " b = " << a << " c = " << b << endl;
+
+    a = temp_c;
+    b = temp_a;
+    c = temp_b;
+
+    cout << "Los valores despues de la permutacion son: a = " << a << " b = " << b << " c = " << c << endl;
 }
 
 void exercise_16(int debut, int fin) {
-
+    //TODO: YOUR CODE HERE
     if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
         cout << "Las horas deben estar entre 0 y 24!" << endl;
         return;
