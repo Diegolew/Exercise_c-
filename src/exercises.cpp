@@ -201,7 +201,7 @@ void exercise_16(int debut, int fin) {
 
     costo_total = horas_baja_tarifa + 2 * horas_alta_tarifa;
 
-    cout << "Has alquilado una bicicleta por\n"
+    cout << "Haz alquilado una bicicleta por\n"
          << horas_baja_tarifa << " hora(s) con el tarifario de 1 boliviano(s)\n"
          << horas_alta_tarifa << " hora(s) con el tarifario de 2 boliviano(s)\n"
          << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
