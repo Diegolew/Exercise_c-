@@ -29,10 +29,13 @@ void exercise_2(double A, double B, double C) {
 }
 
 void exercise_3(int a, int b) {
-  // TODO: YOUR CODE HERE
-if (b==0){
-    cout<< "Imposible"<< endl; 
-    return;
+  //TODO: YOUR CODE HERE
+    if (b == 0) {
+        cout << "Imposible" << endl;
+        return;
+    }
+    int result = a / b;
+    cout << result << endl;
 }
 
 int result = a/b;
