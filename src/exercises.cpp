@@ -30,12 +30,11 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-int resultado;
 int C = double a;
         int D= double b;
 
     if (D == 0) {
-        cout << "Imposible" << endl;
+        cout<< "Imposible"<< endl;
         return 0;
     }
 
