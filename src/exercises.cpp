@@ -127,12 +127,19 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
     output += s4[0];
     output += s5[0];
 
-    // Verificar si el primer caracter de la primera palabra y el primer caracter de la última palabra son iguales
     if (s1[0] == s5[0]) {
         return output + "\nHemos encontrado algo!";
     } else {
         return output + "\nAun sin suerte";
     }
+}
+
+int main() {
+    cout << exercise_9("apple", "banana", "cat", "dog", "eleven") << endl;
+    cout << exercise_9("a", "s", "d", "f", "g") << endl;
+    cout << exercise_9("1", "two", "3", "four", "1") << endl;
+
+    return 0;
 }
 
 int exercise_10(int a, int b) {
