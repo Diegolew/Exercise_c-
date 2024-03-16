@@ -55,7 +55,6 @@ void exercise_2(double A, double B, double C) {
     else {
         cout << "No hay raíces reales distintas" << endl;
     }
-    encontrar_raices_cuadraticas(A, B, C);
 }
 
 void exercise_3(int a, int b) {
