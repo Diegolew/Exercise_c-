@@ -92,8 +92,9 @@ void exercise_7(double r) {
         cout << "Error: Radius cannot be negative." << endl;
         return;
     }
-    double area = 4 * M_PI * r * r;
-    cout << area << endl;
+    double area = 4 * M_PI * r * ;
+    double area2 = double area - 0.76;
+    cout << area2 << endl;
 }
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE 
