@@ -128,18 +128,18 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
-    if (numb1 != 0 && numb2 != 0 && numb3 != 0) {
-        cout << "1\n2\n3" << endl;
-    } else if (numb4 != 0) {
-        cout << "4" << endl;
-    } else {
-        cout << "" << endl;
-}
 }
 
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
-  return "";
+    if (age >= 18 && years_of_experience >= 5)
+        return "director de proyecto senior";
+    else if (age >= 18 && years_of_experience >= 3)
+        return "director de proyecto";
+    else if (age >= 18)
+        return "coordinador de proyecto";
+    else
+        return "No elegible";
 }
 
 string exercise_14(int number_of_docs) {
