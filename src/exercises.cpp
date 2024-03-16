@@ -139,6 +139,13 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
+      if (numb1 != 0 && numb2 != 0 && numb3 != 0) {
+        cout << "1\n2\n3" << endl;
+    } else if (numb4 != 0) {
+        cout << "4" << endl;
+    } else {
+        cout << "" << endl;
+}
 }
 
 string exercise_13(int age, int years_of_experience) {
