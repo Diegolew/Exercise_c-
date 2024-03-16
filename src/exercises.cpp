@@ -25,32 +25,29 @@ void exercise_1(string s1, string s2, string s3) {
 
 }
 void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
-  double resultado = B * B - 4 * A * C;
-  if (resultado > 0) {
-       double Incognita1 = (-B + sqrt(resultado)) / (2 * A);
-       double Incognita2 = (-B - sqrt(resultado)) / (2 * A);
-       cout << Incognita1 << " " << Incognita2 << endl;
-} else if (resultado == 0) {
-      double x = -B / (2 * A);
-      cout << x << endl;
-}
+  // TODO: YOUR CODE HERE 
 }
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
+  if (b==0)
+    {
+       cout<<"Impossible"<<endl;
+    }
+    
+    else{
+
+        int x,y,z=0;
+        x=int(a);
+        y=int(b);
+        z=c/d;
+        
+        cout<<z<<endl;
+   }
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-    double discount = 0.0;
-    
-    if (n > a)
-        discount = x;
-    else if (n > b)
-        discount = y;
-
-    double discounted_price = n * (1 - discount / 100.0);
-    cout << discounted_price << endl;
+  // TODO: YOUR CODE HERE 
 }
 
 
@@ -73,12 +70,7 @@ switch (number){
 }
 
 void exercise_7(double r) {
-    if (r < 0) {
-        cout << "Error: Radius cannot be negative." << endl;
-    } else {
-        double area = 4 * 3.14159 * r * r;
-        cout << fixed << setprecision(2) << area << endl;
-    }
+  // TODO: YOUR CODE HERE 
 }
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE 
