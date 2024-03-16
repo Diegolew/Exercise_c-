@@ -26,6 +26,15 @@ void exercise_1(string s1, string s2, string s3) {
 }
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE 
+    double discriminante = B * B - 4 * A * C;
+    if (discriminante > 0) {
+        double x1 = (-B + sqrt(discriminante)) / (2 * A);
+        double x2 = (-B - sqrt(discriminante)) / (2 * A);
+        cout << x1 << " " << x2 << endl;
+    } else if (discriminante == 0) {
+        double x = -B / (2 * A);
+        cout << x << endl;
+  }
 }
 
 void exercise_3(int a, int b) {
