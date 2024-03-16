@@ -91,12 +91,12 @@ switch (number){
 }
 
 void exercise_7(double r) {
-  // TODO: YOUR CODE
+  //TODO: YOUR CODE
     if (r < 0) {
         cout << "Error: Radius cannot be negative." << endl;
     } else {
         double area = 4 * 3.14159 * r * r;
-        cout << fixed << setprecision(2) << area << endl; // Ajustar la precisión a 2 decimales
+        cout << area << endl; 
     }
 }
 void exercise_8(long int seconds) {
