@@ -24,6 +24,7 @@ void exercise_1(string s1, string s2, string s3) {
 
 }
 void exercise_2(double A, double B, double C) {
+
 }
 
 void exercise_3(int a, int b) {
@@ -64,6 +65,7 @@ double price,price2;
 
 
 void exercise_5(char character) {
+  //TODO: YOUR CODE HERE
     if (isupper(character))
         cout << "upper-case alphabet" << endl;
     else if (islower(character))
@@ -87,6 +89,7 @@ switch (number){
 }
 
 void exercise_7(double r) {
+    //TODO: YOUR CODE HERE
     if (r < 0) {
         cout << "Error: Radius cannot be negative." << endl;
         return;
@@ -117,6 +120,7 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
+    //TODO: YOUR CODE HERE
     if (number == 11235813){
         return "Se encontro a Fibonacci"; 
     } else {
@@ -127,39 +131,14 @@ void exercise_12(string color1, int numb1,
                  string color2, int numb2,
                  string color3, int numb3,
                  string color4, int numb4) {
-    if (numb1 != 0 && numb2 != 0 && numb3 != 0 && numb4 != 0) {
-        cout << "1\n2\n3\n4" << endl;
-    } else if (numb1 == 0 && numb2 != 0 && numb3 != 0 && numb4 != 0) {
-        cout << "2\n3\n4" << endl;
-    } else if (numb1 != 0 && numb2 == 0 && numb3 != 0 && numb4 != 0) {
-        cout << "1\n3\n4" << endl;
-    } else if (numb1 != 0 && numb2 != 0 && numb3 == 0 && numb4 != 0) {
-        cout << "1\n2\n4" << endl;
-    } else if (numb1 != 0 && numb2 != 0 && numb3 != 0 && numb4 == 0) {
+  //TODO: YOUR CODE HERE
+    if (numb1 != 0 && numb2 != 0 && numb3 != 0) {
         cout << "1\n2\n3" << endl;
-    } else if (numb1 == 0 && numb2 == 0 && numb3 != 0 && numb4 != 0) {
-        cout << "3\n4" << endl;
-    } else if (numb1 != 0 && numb2 == 0 && numb3 == 0 && numb4 != 0) {
-        cout << "1\n4" << endl;
-    } else if (numb1 == 0 && numb2 != 0 && numb3 == 0 && numb4 != 0) {
-        cout << "2\n4" << endl;
-    } else if (numb1 == 0 && numb2 != 0 && numb3 != 0 && numb4 == 0) {
-        cout << "2\n3" << endl;
-    } else if (numb1 != 0 && numb2 == 0 && numb3 != 0 && numb4 == 0) {
-        cout << "1\n3" << endl;
-    } else if (numb1 != 0 && numb2 != 0 && numb3 == 0 && numb4 == 0) {
-        cout << "1\n2" << endl;
-    } else if (numb1 == 0 && numb2 == 0 && numb3 == 0 && numb4 != 0) {
+    } else if (numb4 != 0) {
         cout << "4" << endl;
-    } else if (numb1 == 0 && numb2 == 0 && numb3 != 0 && numb4 == 0) {
-        cout << "3" << endl;
-    } else if (numb1 == 0 && numb2 != 0 && numb3 == 0 && numb4 == 0) {
-        cout << "2" << endl;
-    } else if (numb1 != 0 && numb2 == 0 && numb3 == 0 && numb4 == 0) {
-        cout << "1" << endl;
     } else {
         cout << "" << endl;
-}
+    }    
 }
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
@@ -192,5 +171,38 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-  //TODO: YOUR CODE HERE
+
+    if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return;
+    }
+
+    if (debut == fin) {
+        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return;
+    }
+
+    if (fin < debut) {
+        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+        return;
+    }
+
+    int costo_total = 0;
+    int horas_baja_tarifa = 0;
+    int horas_alta_tarifa = 0;
+
+    for (int hora = debut; hora < fin; ++hora) {
+        if ((hora >= 0 && hora < 7) || (hora >= 17 && hora <= 23)) {
+            horas_baja_tarifa++;
+        } else {
+            horas_alta_tarifa++;
+        }
+    }
+
+    costo_total = horas_baja_tarifa + 2 * horas_alta_tarifa;
+
+    cout << "Has alquilado una bicicleta por\n"
+         << horas_baja_tarifa << " hora(s) con el tarifario de 1 boliviano(s)\n"
+         << horas_alta_tarifa << " hora(s) con el tarifario de 2 boliviano(s)\n"
+         << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
 }
