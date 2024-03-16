@@ -41,6 +41,12 @@ void encontrar_raices_cuadraticas(double a, double b, double c) {
 void exercise_2(double A, double B, double C) {
     encontrar_raices_cuadraticas(A, B, C);
 }
+int main() {
+    double A, B, C;
+    cin >> A >> B >> C;
+    exercise_2(A, B, C);
+    return 0;
+}
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
