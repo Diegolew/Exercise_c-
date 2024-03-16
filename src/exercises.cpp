@@ -1,7 +1,6 @@
 #include <string>
 #include <cmath>
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
@@ -96,7 +95,7 @@ void exercise_7(double r) {
         cout << "Error: Radius cannot be negative." << endl;
     } else {
         double area = 4 * 3.14159 * r * r;
-        cout << area << endl; 
+        cout << fixed << setprecision(2)<< area << endl; 
     }
 }
 void exercise_8(long int seconds) {
