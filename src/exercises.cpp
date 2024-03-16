@@ -65,7 +65,7 @@ switch (number){
 
 void exercise_7(double r) {
     if (r < 0) {
-        cout << "Error: Radius cannot be negative." << endl;
+        cout << "\'Error: Radius cannot be negative.\'" << endl;
         return;
     }
     double area = 4 * M_PI * r * r;
