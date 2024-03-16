@@ -25,22 +25,16 @@ void exercise_1(string s1, string s2, string s3) {
 
 }
 void exercise_2(double A, double B, double C) {
-    double discriminante = B * B - 4 * A * C;
-    if (discriminante > 0) {
-        double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
-        double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
-        cout << raiz1 << " " << raiz2 << endl;
-    } else if (discriminante == 0) {
-        double raiz = -B / (2 * A);
-        cout << raiz << endl;
-    } else {
-        cout << "No existen raíces reales" << endl;
-    }
+  // TODO: YOUR CODE HERE
+  double resultado = B * B - 4 * A * C;
+  if (resultado > 0) {
+       double Incognita1 = (-B + sqrt(resultado)) / (2 * A);
+       double Incognita2 = (-B - sqrt(resultado)) / (2 * A);
+       cout << Incognita1 << " " << Incognita2 << endl;
+  } else if (resultado == 0) {
+      double x = -B / (2 * A);
+      cout << x << endl;
 }
-
-int main() {
-    exercise_2(2, 5, 2);
-    return 0;
 }
 
 void exercise_3(int a, int b) {
