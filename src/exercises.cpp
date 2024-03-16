@@ -40,7 +40,7 @@ void exercise_3(int a, int b) {
         int x,y,z=0;
         x=int(a);
         y=int(b);
-        z=c/d;
+        z=x/y;
         
         cout<<z<<endl;
    }
