@@ -196,38 +196,40 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-    //TODO: YOUR CODE HERE
+  // TODO: YOUR CODE HERE
     if (debut < 0 || debut > 24 || fin < 0 || fin > 24) {
         cout << "Las horas deben estar entre 0 y 24!" << endl;
         return;
-    }
-
-    else if (debut == fin) {
+    }if (debut == fin) {
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
         return;
-    }
-
-    else if (fin < debut) {
+    }if (debut > fin) {
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
         return;
     }
+    int total_cost = 0;
+    int current_time = debut;
+    int hour_rate_n1 = 0;
+    int hour_rate_n2 = 0;
 
-    int costo_total = 0;
-    int horas_baja_tarifa = 0;
-    int horas_alta_tarifa = 0;
-
-    for (int hora = debut; hora < fin; ++hora) {
-        if ((hora >= 0 && hora < 7) || (hora >= 17 && hora <= 23)) {
-            horas_baja_tarifa++;
+    while (current_time < fin) {
+        if ((current_time >= 0 && current_time < 7) || (current_time >= 17 && current_time <= 24)) {
+            hour_rate_n1++;
         } else {
-            horas_alta_tarifa++;
+            hour_rate_n2++;
         }
+        current_time++;
     }
 
-    costo_total = horas_baja_tarifa + 2 * horas_alta_tarifa;
+    cout << "Haz alquilado una bicicleta por" << endl;
 
-    cout << "Haz alquilado una bicicleta por\n" 
-         << horas_baja_tarifa << " hora(s) con el tarifario de 1 boliviano(s)\n"
-         << horas_alta_tarifa << " hora(s) con el tarifario de 2 boliviano(s)\n"
-         << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
+    if (hour_rate_n1 > 0) {
+        cout << hour_rate_n1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+        total_cost += hour_rate_n1;
+    }if (hour_rate_n2 > 0) {
+        cout << hour_rate_n2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+        total_cost += hour_rate_n2 * 2;
+    }
+
+    cout << "El monto total a pagar es de " << total_cost << " boliviano(s)."<<endl;
 }
