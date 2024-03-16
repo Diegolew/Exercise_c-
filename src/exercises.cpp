@@ -28,20 +28,13 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE 
     double discriminant = B * B - 4 * A * C;
 
-    if (A == 0) {
-        if (B != 0) {
-            double root = -C / B;
-            cout << root << endl;
-        } else {
-            cout << "" << endl;
-        }
-    } else if (discriminant < 0) {
-        cout << "" << endl;
-    } else {
+    if (discriminant > 0) {
         double root1 = (-B + sqrt(discriminant)) / (2 * A);
         double root2 = (-B - sqrt(discriminant)) / (2 * A);
-
         cout << root1 << " " << root2 << endl;
+    } else if (discriminant == 0) {
+        double root = -B / (2 * A);
+        cout << root << endl;
     }
 }
 
