@@ -57,9 +57,7 @@ void exercise_3(int a, int b) {
   if (b==0)
     {
        cout<<"Impossible"<<endl;
-    }
-    
-    else{
+    }else{
 
         int x,y,z=0;
         x=int(a);
@@ -76,14 +74,10 @@ double price,price2;
   if(n>a && n>b){
     price2=n-(n*y)/(100.00);
     cout<<price2<<endl;
-  }
-  
- 
-  else if(n>a){
+  } else if(n>a){
     price=n-(n*x)/(100.00);
     cout<<price<<endl;
-  }
-  else{
+  } else {
    cout<<n<<endl;
 }
 }
@@ -163,6 +157,7 @@ void exercise_12(string color1, int numb1,
         cout << "" << endl;
     }    
 }
+
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
     if (age >= 18 && years_of_experience >= 5)
@@ -185,7 +180,6 @@ string exercise_14(int number_of_docs) {
         return to_string(number_of_docs) + " documentos encontrados";
 }
 }
-
 
 void exercise_15(int a, int b, int c) {
     //TODO: YOUR CODE HERE 
