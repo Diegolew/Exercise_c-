@@ -42,7 +42,7 @@ void encontrar_raices_cuadraticas(double A, double B, double C) {
 
 void exercise_2(double A, double B, double C) {
       double discriminante = B*B - 4*A*C;
-      encontrar_raices_cuadraticas(A, B, C);
+
     if (discriminante > 0) {
         double raiz1 = (-B + sqrt(discriminante)) / (2*A);
         double raiz2 = (-B - sqrt(discriminante)) / (2*A);
@@ -55,6 +55,7 @@ void exercise_2(double A, double B, double C) {
     else {
         cout << "No hay raíces reales distintas" << endl;
     }
+    encontrar_raices_cuadraticas(A, B, C);
 }
 
 void exercise_3(int a, int b) {
