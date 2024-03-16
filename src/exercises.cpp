@@ -26,24 +26,11 @@ void exercise_1(string s1, string s2, string s3) {
 }
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-    double discriminante = B * B - 4 * A * C;
-    if (discriminante > 0) {
-        double x1 = (-B + sqrt(discriminante)) / (2 * A);
-        double x2 = (-B - sqrt(discriminante)) / (2 * A);
-        cout << x1 << " " << x2 << endl;
-    } else if (discriminante == 0) {
-        double x = -B / (2 * A);
-        cout << x << endl;
-    }
+
 }
 
 void exercise_3(int a, int b) {
-    if (b == 0) {
-        cout << "Imposible" << endl;
-        return;
-    }
-    int result = a / b;
-    cout << result << endl;
+  // TODO: YOUR CODE HERE
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
