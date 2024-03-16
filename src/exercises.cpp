@@ -36,8 +36,8 @@ void exercise_2(double A, double B, double C) {
         double root = -B / (2 * A);
         cout << root << endl;
     } else {
-        cout << "" << endl; // Si el discriminante es negativo, no hay raíces reales
-    }
+        cout << "" << endl;
+  }
 }
 
 void exercise_3(int a, int b) {
