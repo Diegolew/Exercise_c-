@@ -21,6 +21,20 @@ void exercise_1(string s1, string s2, string s3) {
 
 }
 void exercise_2(double A, double B, double C) {
+    double discriminante = B*B - 4*A*C;
+
+    if (discriminante > 0) {
+        double raiz1 = (-B + sqrt(discriminante)) / (2*A);
+        double raiz2 = (-B - sqrt(discriminante)) / (2*A);
+        cout << raiz1 << " " << raiz2 << endl;
+    }
+    else if (discriminante == 0) {
+        double raiz = -B / (2*A);
+        cout << raiz << endl;
+    }
+    else {
+        cout << "No hay raíces reales distintas" << endl;
+    }
 }
 
 void exercise_3(int a, int b) {
@@ -87,19 +101,19 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-    int hours = seconds / 3600;
-    int minutes = (seconds % 3600) / 60;
-    int remaining_seconds = seconds % 60;
-
     if (seconds < 0) {
         cout << "Error: Input seconds cannot be negative." << endl;
         return;
     }else {
+    
+    int hours = seconds / 3600;
+    int minutes = (seconds % 3600) / 60;
+    int remaining_seconds = seconds % 60;
+
     cout << setfill('0'); 
     cout << setw(2) << hours << ":" << setw(2) << minutes << ":" << setw(2) << remaining_seconds << endl;
     }
 }
-
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
     string output = "";
     output += s1[0];
