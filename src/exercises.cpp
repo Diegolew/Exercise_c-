@@ -27,15 +27,28 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
     double discriminant = B * B - 4 * A * C;
 
-    if (discriminant > 0) {
-        double root1 = (-B + sqrt(discriminant)) / (2 * A);
-        double root2 = (-B - sqrt(discriminant)) / (2 * A);
-        cout << root1 << " " << root2 << endl;
-    } else if (discriminant == 0) {
-        double root = -B / (2 * A);
-        cout << root << endl;
+    if (A == 0) {
+        if (B != 0) {
+            double root = -C / B;
+            cout << root << endl;
+        } else {
+            if (C == 0) {
+                cout << "Infinite solutions" << endl;
+            } else {
+                cout << "No solution" << endl;
+            }
+        }
     } else {
-        cout << "" << endl; 
+        if (discriminant > 0) {
+            double root1 = (-B + sqrt(discriminant)) / (2 * A);
+            double root2 = (-B - sqrt(discriminant)) / (2 * A);
+            cout << root1 << " " << root2 << endl;
+        } else if (discriminant == 0) {
+            double root = -B / (2 * A);
+            cout << root << endl;
+        } else {
+            cout << "" << endl;
+        }
     }
 }
 
