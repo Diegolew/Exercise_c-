@@ -33,9 +33,9 @@ void exercise_2(double A, double B, double C) {
         cout << raiz << endl;
     }
     else {
-        cout << "No hay raíces reales distintas" << endl;
+        cout << " " << endl;
     }
-}
+} 
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
