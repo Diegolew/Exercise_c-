@@ -23,8 +23,24 @@ void exercise_1(string s1, string s2, string s3) {
  }
 
 }
-void exercise_2(double A, double B, double C) {
+void encontrar_raices_cuadraticas(double a, double b, double c) {
+    double discriminante = b*b - 4*a*c;
 
+    if (discriminante > 0) {
+        double raiz1 = (-b + sqrt(discriminante)) / (2*a);
+        double raiz2 = (-b - sqrt(discriminante)) / (2*a);
+        cout << raiz1 << " " << raiz2 << endl;
+    } else if (discriminante == 0) {
+        double raiz = -b / (2*a);
+        cout << raiz << endl;
+    } else {
+        cout << "No hay raíces reales distintas" << endl;
+    }
+}
+
+void exercise_2(double A, double B, double C) {
+    encontrar_raices_cuadraticas(A, B, C);
+}
 }
 
 void exercise_3(int a, int b) {
