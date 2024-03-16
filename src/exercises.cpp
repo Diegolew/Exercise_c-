@@ -28,26 +28,26 @@ void exercise_2(double A, double B, double C) {
     if (A == 0) {
         if (B == 0) {
             if (C == 0) {
-                cout << "Infinitas soluciones" << endl;
+                std::cout << "Infinitas soluciones" << std::endl;
             } else {
-                cout << "No tiene soluciones" << endl;
+                std::cout << "No tiene soluciones" << std::endl;
             }
         } else {
             double x = -C / B;
-            cout << x << endl;
+            std::cout << x << std::endl;
         }
     } else {
         if (discriminante > 0) {
             double x1 = (-B + sqrt(discriminante)) / (2 * A);
             double x2 = (-B - sqrt(discriminante)) / (2 * A);
-            cout << x1 << " " << x2 << endl;
+            std::cout << x1 << " " << x2 << std::endl;
         } else if (discriminante == 0) {
             double x = -B / (2 * A);
-            cout << x << endl;
+            std::cout << x << std::endl;
         } else {
-            cout << "No tiene soluciones reales" << endl;
+            std::cout << "No tiene soluciones reales" << std::endl;
         }
-  }
+    }
 }
 
 void exercise_3(int a, int b) {
