@@ -24,22 +24,15 @@ void exercise_1(string s1, string s2, string s3) {
 
 }
 void exercise_2(double A, double B, double C) {
-    double discriminant = B * B - 4 * A * C;
-
-    if (A == 0) {
-        cout << "Coefficients A cannot be zero." << endl;
-        return;
-    }
-
-    if (discriminant > 0) {
-        double root1 = (-B + sqrt(discriminant)) / (2 * A);
-        double root2 = (-B - sqrt(discriminant)) / (2 * A);
-        cout << root1 << " " << root2 << endl;
-    } else if (discriminant == 0) {
-        double root = -B / (2 * A);
-        cout << root << endl;
-    } else {
-        cout << "No real roots" << endl;
+    // TODO: YOUR CODE HERE
+    double discriminante = B * B - 4 * A * C;
+    if (discriminante > 0) {
+        double x1 = (-B + sqrt(discriminante)) / (2 * A);
+        double x2 = (-B - sqrt(discriminante)) / (2 * A);
+        cout << x1 << " " << x2 << endl;
+    } else if (discriminante == 0) {
+        double x = -B / (2 * A);
+        cout << x << endl;
     }
 }
 
