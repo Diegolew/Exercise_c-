@@ -202,12 +202,12 @@ void exercise_16(int debut, int fin) {
         return;
     }
 
-    if (debut == fin) {
+    else if (debut == fin) {
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
         return;
     }
 
-    if (fin < debut) {
+    else if (fin < debut) {
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
         return;
     }
