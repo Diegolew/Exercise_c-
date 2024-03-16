@@ -44,14 +44,12 @@ void exercise_2(double A, double B, double C) {
         double raiz1 = (-B + sqrt(discriminante)) / (2*A);
         double raiz2 = (-B - sqrt(discriminante)) / (2*A);
         cout << raiz1 << " " << raiz2 << endl;
-    }
-    else if (discriminante == 0) {
+    }else if (discriminante == 0) {
         double raiz = -B / (2*A);
         cout << raiz << endl;
-    }
-    else {
+    }else {
         cout << "No hay raíces reales distintas" << endl;
-    }
+}
 }
 
 void exercise_3(int a, int b) {
