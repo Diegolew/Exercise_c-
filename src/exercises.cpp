@@ -189,7 +189,10 @@ string exercise_14(int number_of_docs) {
 }
 
 void exercise_15(int a, int b, int c) {
-  //TODO: YOUR CODE
+    //TODO: YOUR CODE HERE
+    int a = 51;
+    int b = 876;
+    int c = 235;
     cout << "Los valores son: a = " << a << " b = " << b << " y c = " << c << endl;
     cout << "Permutamos: a => b, b => c, c => a" << endl;
     cout << "Los valores despues de la permutacion son: a = " << c << " b = " << a << " c = " << b << endl;
