@@ -87,7 +87,7 @@ switch (number){
 }
 
 void exercise_7(double r) {
-    if (r < 0) {
+if (r < 0) {
         cout << "Error: Radius cannot be negative." << endl;
         return;
     }
@@ -95,6 +95,7 @@ void exercise_7(double r) {
     double area2 = area - 0.76; 
     cout << area2 << endl;
 }
+
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE 
 }
