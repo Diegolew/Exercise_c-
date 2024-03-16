@@ -76,7 +76,7 @@ double price,price2;
   }
   else{
    cout<<n<<endl;
-  }
+}
 }
 
 
