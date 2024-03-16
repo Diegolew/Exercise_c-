@@ -31,7 +31,7 @@ void exercise_2(double A, double B, double C) {
        double Incognita1 = (-B + sqrt(resultado)) / (2 * A);
        double Incognita2 = (-B - sqrt(resultado)) / (2 * A);
        cout << Incognita1 << " " << Incognita2 << endl;
-  } else if (resultado == 0) {
+} else if (resultado == 0) {
       double x = -B / (2 * A);
       cout << x << endl;
 }
