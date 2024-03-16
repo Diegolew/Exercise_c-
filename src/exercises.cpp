@@ -6,7 +6,25 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
+  string count_short_char;
+  if (s1 < s2 && s1 < s3) {
+    count_short_char = s1;
+    cout << count_short_char;
+  }
+  else if (s2 < s1 && s2 < s3){
+    count_short_char = s2;
+    cout << count_short_char;
+    }
+  else if (s3 < s1 && s3 < s2) {
+    count_short_char = s3;
+    cout << count_short_char;
+  }
+  else {
+    cout<<s1;
+ }
+
 }
+
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
@@ -26,16 +44,6 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE 
-switch (number){
-    case 1:cout<<"Monday"<<endl;break;
-    case 2:cout<<"Tuesday"<<endl;break;
-    case 3:cout<<"Wednesday"<<endl;break;
-    case 4:cout<<"Thursday"<<endl;break;
-    case 5:cout<<"Friday"<<endl;break;
-    case 6:cout<<"Saturday"<<endl;break;
-    case 7:cout<<"Sunday"<<endl;break;
-    default:cout<<"Invalid input"<<endl;break;
-    }
 }
 
 void exercise_7(double r) {
