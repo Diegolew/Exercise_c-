@@ -134,7 +134,7 @@ void exercise_12(string color1, int numb1,
         cout << "4" << endl;
     } else {
         cout << "" << endl;
-  }
+}
 }
 
 string exercise_13(int age, int years_of_experience) {
