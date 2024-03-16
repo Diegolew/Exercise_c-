@@ -63,13 +63,25 @@ switch (number){
 }
 }
 
+double calculateSphereArea(double radius) {
+    return 4 * M_PI * radius * radius;
+}
+
 void exercise_7(double r) {
+    // Manejo del caso de radio negativo
     if (r < 0) {
-        cout << "\'Error: Radius cannot be negative.\'" << endl;
+        cout << "Error: Radius cannot be negative." << endl;
         return;
     }
-    double area = 4 * M_PI * r * r;
+    
+    double area = calculateSphereArea(r);
     cout << area << endl;
+}
+
+int main() {
+    // Ejemplo de uso de la función exercise_7
+    exercise_7(10.9);
+    return 0;
 }
 
 void exercise_8(long int seconds) {
