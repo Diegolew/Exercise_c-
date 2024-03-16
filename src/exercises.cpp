@@ -42,14 +42,17 @@ void exercise_3(int a, int b) {
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  // TODO: YOUR CODE HERE
-  if (n > a) {
-    n *= 1 - x / 100.0;
-} else if (n > b) {
-    n *= 1 - y / 100.0;
+    double discount = 0.0;
+    
+    if (n > a)
+        discount = x;
+    else if (n > b)
+        discount = y;
+
+    double discounted_price = n * (1 - discount / 100.0);
+    cout << discounted_price << endl;
 }
-    cout << n << endl;
-}
+
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
