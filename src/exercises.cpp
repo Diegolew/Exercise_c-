@@ -95,7 +95,6 @@ void exercise_7(double r) {
     double area = 4 * M_PI * r * r;
     cout << area << endl;
 }
-}
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE 
 }
