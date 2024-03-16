@@ -52,7 +52,7 @@ switch (number){
     case 6:cout<<"Saturday"<<endl;break;
     case 7:cout<<"Sunday"<<endl;break;
     default:cout<<"Invalid input"<<endl;break;
-    }
+}
 }
 
 void exercise_7(double r) {
