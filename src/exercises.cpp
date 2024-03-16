@@ -30,17 +30,15 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-int C = double a;
-        int D= double b;
 
-    if (D == 0) {
+    if (b == 0) {
         cout<< "Imposible"<< endl;
         return 0;
     }
 
-    int resultado = C / D;
+    int resultado = a / b;
 
-    cout << "La parte entera del cociente de " << C << " dividido por " << D << " es: " << resultado << endl;
+    cout << "La parte entera del cociente de " << a << " dividido por " << b << " es: " << resultado << endl;
 
 }
 
