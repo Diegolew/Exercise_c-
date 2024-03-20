@@ -100,6 +100,7 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
+
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
@@ -131,7 +132,7 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
-    //TODO: YOUR CODE HERE
+    // TODO: YOUR CODE HERE
     if (number == 11235813){
         return "Se encontro a Fibonacci"; 
     } else {
@@ -142,14 +143,13 @@ void exercise_12(string color1, int numb1,
                  string color2, int numb2,
                  string color3, int numb3,
                  string color4, int numb4) {
-  //TODO: YOUR CODE HERE
-    if (numb1 != 0 && numb2 != 0 && numb3 != 0) {
-        cout << "1\n2\n3" << endl;
-    } else if (numb4 != 0) {
-        cout << "4" << endl;
-    } else {
-        cout << "" << endl;
-    }    
+  // TODO: YOUR CODE HERE
+     bool m1 = (color1 == color4 || color4 == "?") && (numb1 == numb4 || numb4 == -1);
+     bool m2 = (color2 == color4 || color4 == "?") && (numb2 == numb4 || numb4 == -1);
+     bool m3 = (color3 == color4 || color4 == "?") && (numb3 == numb4 || numb4 == -1);
+     if (m1) cout << "1" << endl;
+     if (m2) cout << "2" << endl;
+     if (m3) cout << "3"<<endl;
 }
 
 string exercise_13(int age, int years_of_experience) {
