@@ -144,11 +144,11 @@ void exercise_12(string color1, int numb1,
                  string color4, int numb4) {
   //TODO: YOUR CODE HERE
     if (numb1 != 0 && numb2 != 0 && numb3 != 0) {
-        return "1 2 3" ;
+        cout << "1\n2\n3" << endl;
     } else if (numb4 != 0) {
-        return "4" ;
+        cout << "4" << endl;
     } else {
-        return "" ;
+        cout << "" << endl;
     }    
 }
 
