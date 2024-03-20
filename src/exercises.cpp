@@ -24,16 +24,21 @@ void exercise_2(double A, double B, double C) {
     // Calcular el discriminante
     double discriminant = B * B - 4 * A * C;
 
+    // Verificar si hay soluciones reales distintas
     if (discriminant > 0) {
+        // Calcular las dos raíces
         double root1 = (-B + sqrt(discriminant)) / (2 * A);
         double root2 = (-B - sqrt(discriminant)) / (2 * A);
         
+        // Imprimir las raíces en cualquier orden
         cout << root1 << " " << root2 << endl;
     } else if (discriminant == 0) {
+        // Solo hay una raíz real
         double root = -B / (2 * A);
         cout << root << endl;
     } else {
-        cout << endl;
+        // No hay raíces reales
+        cout << "No hay raíces reales" << endl;
     }
 }
 
